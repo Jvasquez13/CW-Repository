@@ -142,8 +142,13 @@ if (!isset($_SESSION['usuario'])) {
         <div class="cards-single">
           <div>
             <h1>
-
-             3
+            <?php
+              include('db.php');
+              $sql = "SELECT * FROM repository WHERE type = 'book' ";
+              $query = mysqli_query($conexion, $sql);
+              $clientes = mysqli_num_rows($query);
+              echo $clientes;
+              ?>
             </h1>
             <span>Books</span>
           </div>
@@ -155,8 +160,13 @@ if (!isset($_SESSION['usuario'])) {
         <div class="cards-single">
           <div>
             <h1>
-              3
-
+            <?php
+              include('db.php');
+              $sql = "SELECT * FROM repository WHERE type = 'course' ";
+              $query = mysqli_query($conexion, $sql);
+              $clientes = mysqli_num_rows($query);
+              echo $clientes;
+              ?>
             </h1>
             <span>Courses</span>
           </div>
@@ -168,7 +178,13 @@ if (!isset($_SESSION['usuario'])) {
         <div class="cards-single">
           <div>
             <h1>
-             6
+            <?php
+              include('db.php');
+              $sql = "SELECT * FROM repository";
+              $query = mysqli_query($conexion, $sql);
+              $clientes = mysqli_num_rows($query);
+              echo $clientes;
+              ?>
             </h1>
             <span>Resources</span>
           </div>

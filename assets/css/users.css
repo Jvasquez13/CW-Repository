@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-image: url(../images/fondoHome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+header{
+    height: 20px;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    padding: 0px 20px;
+}
+
+.logout-btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+.log-btn{
+    color: white;
+    background:none;
+}
+
+
+.logout-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #e93131;
+    margin-bottom: 40px;
+}
+
+td a {
+    color: white;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background-color: #ee2828;
+    border-radius: 20px;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 2px solid #f3f8fd85;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+
+
+

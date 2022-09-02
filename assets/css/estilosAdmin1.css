@@ -289,6 +289,18 @@ tr td:last-child {
     align-items: center;
 }
 
+.status.purple {
+    background: rebeccapurple;
+}
+
+.status.pink {
+    background: deeppink;
+}
+
+.status.orange {
+    background: orangered;
+}
+
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -401,9 +413,11 @@ tr td:last-child {
 }
 
 .container__Tabla {
+    /*width: 1150px;*/
     /*Estos 2 comentarios cambian el tamaño segun el menu*/
     width: 100%;
     /**/
+    /*margin: auto; Inutil*/
     margin-top: 20px;
     align-items: center;
     position: relative;
@@ -411,15 +425,15 @@ tr td:last-child {
     box-shadow: 8px 8px 5px 0px #bdbdbdbf;
     background-color: rgb(243, 240, 240);
     border-radius: 10px;
-    overflow-x: auto;
+    padding: 10px;
+    overflow: hidden;
 }
-
 
 .tabla__footer {
     text-align: right;
 }
 
-.tabla__header table  {
+.tabla__header {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     width: 100%;
@@ -427,7 +441,6 @@ tr td:last-child {
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px 0;
-    overflow-x: auto;
 }
 
 button {
@@ -471,7 +484,7 @@ button:hover {
     height: 110px;
     border-radius: 50%;
     position: absolute;
-    top: -30px;
+    top: 0px;
     right: -10px;
     right: calc(50%-230px);
 }
